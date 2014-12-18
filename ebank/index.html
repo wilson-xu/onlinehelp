@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" lang="zh-CN" ng-app='app'>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<title>Online Help</title>
+
+		<!-- Le styles -->
+		<link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../lib/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="../lib/css/docs.css" rel="stylesheet">
+		<link href="../lib/css/bootstrap-dropdown.css" rel="stylesheet">
+
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+			<script src="../lib/js/html5shiv.min.js"></script>
+			<script src="../lib/js/respond.min.js"></script>
+			<script src="../lib/js/json2.js"></script>
+		<![endif]-->
+		
+	</head>
+
+	<body ng-controller="ShowController" >
+		<div id="wrapper">
+
+		<!-- Navbar
+		================================================== -->
+		
+		<header class="header header-fixed">
+	      <section class="navbar navbar-inverse docs-navbar-primary">
+	        <div class="container">
+	          <div class="row">
+	            <div class="col-md-9 header-branding">
+	              <a class="brand navbar-brand" >
+	                <img src="../lib/img/logo.png" />
+	              </a>
+	              <ul class="nav navbar-nav">
+	              	<li class="divider-vertical"></li>
+           			<li class=""><a href="#" ng-click="show('OnlineHelpDoc.htm');"><i class="icon-home icon-white"></i> Home</a></li>
+	              	
+	              	<!-- Menu Group start
+				     	================================================== -->
+	                <li class="divider-vertical"></li>
+	                <li class="dropdown ">
+	                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                  <!-- 一级菜单 -->
+	                    <i class="icon-eye-open icon-white"></i> 核心系统 <b class="caret"></b>
+	                  </a>
+	                  <!-- 二级菜单   -->
+	                  <ul class="dropdown-menu">
+	                    <li ><a href="#" ng-click="show('./doc/test/中原银行.htm');">公共</a></li>
+	                    <li ><a href="#" ng-click="show('./doc/test/中原银行.htm');">公共</a></li>
+	                    <li ><a href="#" ng-click="show('./doc/test/中原银行.htm');">公共</a></li>
+	                    <li ><a href="#" ng-click="show('./doc/test/中原银行.htm');">公共</a></li>
+	                  </ul>
+	                </li>
+	                <!-- Menu Group end
+				     	================================================== -->
+				     	
+				     	
+	                
+	              </ul>
+	            </div>
+	          </div>
+	        </div>
+	      </section>
+	    </header>
+		
+		<section role="main" class="container main-body">
+	      <div class="main-grid main-body-grid">
+	      	<!-- Docs nav
+				================================================== -->
+	        <div class="grid-left">
+	          <div class="side-navigation">
+	            <ul id="catal"  class="nav-list naked-list">
+
+	            </ul>
+	          </div>
+	        </div>
+	        <!-- Docs Content
+				================================================== -->
+	        <div class="grid-right">
+	          <div id="content" >
+	          	<div class="container">
+				        <span class="welcome">Online Help Doc</span>
+				        <h2>简洁、直观的在线帮助文档，让业务操作更迅速、简单。</h2>
+				</div>
+	          </div>
+	        </div>
+	      </div>
+	    </section>
+
+		<!-- Footer
+		================================================== -->
+		<footer class="footer-onlinehelp" >
+	      <div class="container" style="text-align: center;">
+	        <span>
+	          Super-powered by ZYBank  ©2014
+	        </span>
+	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        <span >  
+	          Code licensed under the
+	          <a href="https://www.csii.com.cn" target="_blank">The
+	            MIT License</a>. Documentation licensed under <a
+	              href="http://www.csii.com.cn/">CSII.COM</a>.
+	        </span>
+	      </div>
+   		 </footer>
+
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+
+		<script src="../lib/js/lib/jquery/jquery-1.11.1.js"></script>
+		<script src="../lib/js/lib/angular/angular.js"></script>
+		<script src="../lib/js/lib/bootstrap/bootstrap.js"></script>
+		<script src="../lib/js/controller.js"></script>
+	  </div>
+	</body>
+</html>

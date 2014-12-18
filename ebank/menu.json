@@ -1,0 +1,15 @@
+{
+  "name": "ebank",
+  "menutree": [
+  	{
+      "name": "Home",
+      "type": "root",
+      "url": "https://github.com/hakimel/reveal.js/blob/master/LICENSE"
+    }
+  ],
+  [
+  	{
+  		"name":"电子银行"
+	}
+  ]
+}
